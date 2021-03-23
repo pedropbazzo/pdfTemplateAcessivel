@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <title>Tabela acessivel</title>
+<style>
+  html {
+    font-family: sans-serif;
+  }
+
+  table {
+    width: 600px;
+    border-collapse: collapse;
+    border: 1px solid black;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+  }
+
+  th,td {
+    padding: 10px;
+  }
+
+  td {
+    text-align: center;
+  }
+
+  th[scope="col"] {
+    background: #ccc;
+  }
+
+  tr:nth-child(even) {
+    background: #eee;
+  }
+
+  tr:nth-child(odd) {
+    background: #ddd;
+  }
+</style>
+</head>
+<body>
+<h1>Tabela acessivel</h1>
+<table>
+  <tr>
+    <th scope="col">Nome</th>
+    <th scope="col">Idade</th>
+    <th scope="col">Naturalidade</th>
+  </tr>
+  <tr>
+    <th scope="row">Jéssica Maria</th>
+    <td>25</td>
+    <td>Santos</td>
+  </tr>
+  <tr>
+    <th scope="row">Pedro</th>
+    <td>25</td>
+    <td>Asgard</td>
+  </tr>
+  <tr>
+    <th scope="row">Gabriel</th>
+    <td>25</td>
+    <td>Narnia</td>
+  </tr>
+</table>
+</body>
+</html>
